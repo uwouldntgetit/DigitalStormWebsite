@@ -28,9 +28,14 @@ a {
     text-decoration: none;
 }
 
-.text-container {
+.home-text-container {
     min-height: 100vh;
+    text-align:center;
 }
+
+/* #home-text-p {
+    width: 40vh;
+} */
 
 .services-container {
     display: flex;
