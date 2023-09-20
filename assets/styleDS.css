@@ -15,6 +15,8 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: white;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -23,6 +25,8 @@ a {
 
 .wide-container{
     max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /* #services-div {
@@ -82,6 +86,19 @@ a {
     border-top: 3px solid rgb(78, 0, 167);
 }
 
+.button-like-link {
+    display: inline-block;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 25px;
+    min-width: 130px;
+    min-height: 50px;
+    color: inherit;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 50px;
+}
+
 .services-container {
     display: flex;
     flex-direction: row;
@@ -89,8 +106,9 @@ a {
     justify-content: center;
     flex-basis: content;
     align-items: center;
-    margin: 10px 30px;
+    margin: 20px 0;
     background-color: rgb(59, 59, 59);
+    min-height: 80%;
 }
 
 .service {
@@ -104,17 +122,38 @@ a {
     max-width: 300px;
     width: 300px;
     text-align: center;
+    padding-top: 20px;
+    vertical-align: middle;
 }
 
 #services-description {
     /* make it occupy at least half the available space */
+    margin: 10px 30px;
 }
 
 
-
+/************* Projects done start **********/
 #projects-container {
     text-align: center;
 }
+
+.projects-hero-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 80%;
+
+}
+
+.project-hero {
+    overflow:auto;
+    min-height: 200px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+
+/* projects done end */
+
 
 footer{
     margin-bottom: 0;
