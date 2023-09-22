@@ -23,6 +23,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .wide-container{
     max-width: 100%;
     margin-right: 0px;
@@ -140,15 +145,19 @@ a {
 .projects-hero-container {
     display: flex;
     flex-direction: row;
-    max-height: 80%;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-hero {
     overflow:auto;
     min-height: 200px;
     max-height: 500px;
+    width: 500px;
+    max-width: 100%;
     border-radius: 10px;
+    background-color: black;
+    margin: 25px 25px;
 }
 
 
