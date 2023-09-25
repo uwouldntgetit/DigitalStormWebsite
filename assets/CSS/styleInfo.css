@@ -1,0 +1,20 @@
+
+body {
+    background-color: rgb(92, 92, 92);
+    height: 100%;
+    color: white;
+}
+
+.text-container {
+    margin: 100px 15%;
+    padding: 20px;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+
+@media screen and(max-width: 60rem) {
+    .text-container {
+        border: none;
+    }
+}

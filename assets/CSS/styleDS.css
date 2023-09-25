@@ -76,7 +76,8 @@ img {
     line-height: 50px;
 }
 
-/* Services start */
+
+/******** Services start *******/
 .services-container {
     display: flex;
     flex-direction: row;
@@ -107,7 +108,7 @@ img {
     /* make it occupy at least half the available space */
     margin: 10px 30px;
 }
-/* Services end */
+/******* Services end ******/
 
 
 /************* Projects done start **********/
@@ -140,17 +141,23 @@ img {
 /* Contact Start */
 
 .contact-section {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .contact-wrapper {
     min-width: 200px;
     min-height: 50vh;
-    margin: 150px 10%;
     border: 1px solid gray;
     border-radius: 8px;
     flex-direction: row;
-    align-content: space-around;
+    align-content: center;
     gap: 20px;
+
+    flex-basis: 45%;
 }
 
 .contact-item {
@@ -164,19 +171,12 @@ img {
 }
 
 #nome {
-    flex-basis: 40%;
+    flex-basis: 80%;
 }
 
-#cognome {
-    flex-basis: 40%;
-}
 
 #email{
-    flex-basis: 40%;
-}
-
-#subject {
-    flex-basis: 40%;
+    flex-basis: 80%;
 }
 
 #message {
@@ -195,7 +195,7 @@ img {
 #contact-info {
     color: black;
     line-height: 40px;
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 
 /* Contact end */
@@ -223,5 +223,14 @@ img {
 
     #home-text-p {
         font-size: 1.1rem;
+    }
+
+    .contact-wrapper {
+        flex-basis: 80%;
+    }
+
+    #contact-info {
+        flex-basis: 80%;
+        text-align: center;
     }
 }
