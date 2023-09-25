@@ -38,7 +38,7 @@ img {
 
 .home-text-container {
     min-height: fit-content;
-    height: 100vh;
+    height: fit-content;
     text-align:center;
     margin-top: 20vh;
     margin-right: 20px;
@@ -46,6 +46,7 @@ img {
     color: rgb(255, 255, 255);
     position: relative;
     z-index: 1;
+    padding-bottom: 20vh;
 }
 
 #home-title {
@@ -115,6 +116,11 @@ img {
 #projects-container {
     text-align: center;
     background-color: gray;
+    padding-top: 40px;
+}
+
+#projects-title {
+    margin-top: 0;
 }
 
 .projects-hero-container {
@@ -135,11 +141,10 @@ img {
     margin: 25px 25px;
 }
 
-
 /* projects done end */
 
-/* Contact Start */
 
+/****** Contact Start ******/
 .contact-section {
     flex-direction: row;
     align-items: center;
@@ -156,7 +161,7 @@ img {
     flex-direction: row;
     align-content: center;
     gap: 20px;
-
+    padding: 20px 0px;
     flex-basis: 45%;
 }
 

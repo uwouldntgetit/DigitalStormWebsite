@@ -3,13 +3,19 @@ body {
     background-color: rgb(92, 92, 92);
     height: 100%;
     color: white;
+    font-family: "Roboto", serif;
 }
 
 .text-container {
     margin: 100px 15%;
-    padding: 20px;
+    padding: 0 20px;
     border-left: 2px solid gray;
     border-right: 2px solid gray;
+}
+
+.main-title {
+    text-align: center;
+    color: blanchedalmond;
 }
 
 
