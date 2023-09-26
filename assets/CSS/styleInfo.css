@@ -6,6 +6,15 @@ body {
     font-family: "Roboto", serif;
 }
 
+h3 {
+    font-size: 2em;
+    color: blanchedalmond;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 .text-container {
     margin: 100px 15%;
     padding: 0 20px;

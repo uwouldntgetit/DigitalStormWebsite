@@ -1,3 +1,26 @@
+body {
+    margin: 0;
+}
+
+nav {
+    text-decoration: none;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    padding: 10px;
+    transition: top 500ms ease-in-out;
+}
+
+nav.scroll-up {
+    top: 0;
+}
+
+nav.scroll-down {
+    top: -100%;
+}
+
 .wide-container{
     max-width: 100%;
     margin-right: 0px;

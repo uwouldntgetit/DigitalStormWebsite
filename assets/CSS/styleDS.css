@@ -31,14 +31,8 @@ img {
 
 
 
-
-#navbar {
-    text-decoration: none;
-}
-
 .home-text-container {
     min-height: fit-content;
-    height: fit-content;
     text-align:center;
     margin-top: 20vh;
     margin-right: 20px;
