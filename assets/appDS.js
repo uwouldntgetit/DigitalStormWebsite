@@ -1,7 +1,9 @@
+"use strict"
+
 let previousScrollPosition = 0;
 const nav = document.querySelector("nav");
-
-
+let isWaiting;
+const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 
 const isScrollingDown = () => {
@@ -17,7 +19,7 @@ const isScrollingDown = () => {
 }
 
 const handleNavScroll = () => {
-    if (isScrollingDown()){
+    if (isScrollingDown() && !nav.contains(document.activeElement)){
         nav.classList.add("scroll-down");
         nav.classList.remove("scroll-up");
         return;
@@ -26,3 +28,23 @@ const handleNavScroll = () => {
     nav.classList.add("scroll-up");
     nav.classList.remove("scroll-down");
 }
+
+// to make performance better the handleNavScroll will be called only
+// every 150 ms
+
+const optimize = (callback, time) => {
+    if(isWaiting) return;
+
+    isWaiting = true;
+
+    setTimeout(() => {
+        callback();
+        isWaiting = false;
+    }, time);
+}
+
+
+document.addEventListener("scroll", () => {
+    if(mediaQuery && !mediaQuery.matches)
+    optimize(handleNavScroll, 250)
+});

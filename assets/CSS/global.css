@@ -11,6 +11,9 @@ nav {
     background-color: #eaeaea;
     padding: 10px;
     transition: top 500ms ease-in-out;
+    color: black;
+
+    min-height: 10vh;
 }
 
 nav.scroll-up {
