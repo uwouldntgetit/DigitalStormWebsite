@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     text-decoration: none;
     position: sticky;
@@ -79,3 +83,68 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+
+
+/****** Contact Start ******/
+.contact-section {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.contact-wrapper {
+    min-width: 200px;
+    min-height: 50vh;
+    border: 1px solid gray;
+    border-radius: 8px;
+    flex-direction: row;
+    align-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+    flex-basis: 45%;
+    background-color: rgb(169, 165, 165);
+}
+
+.contact-item {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    min-height: 30px;
+    min-width: 150px;
+    padding: 10px;
+}
+
+#nome {
+    flex-basis: 80%;
+}
+
+
+#email{
+    flex-basis: 80%;
+}
+
+#message {
+    flex-basis: 80%;
+    min-height: 14vh;
+}
+
+#send-btn {
+    background-color: beige;
+    color: black;
+    width: 150px;
+    height: 40px;
+    flex-basis: 30%;
+}
+
+#contact-info {
+    color: black;
+    line-height: 40px;
+    flex-basis: 20%;
+    text-decoration: none;
+}
+
+/* Contact end */
