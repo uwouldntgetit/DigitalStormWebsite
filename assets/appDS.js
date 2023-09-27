@@ -18,6 +18,7 @@ const isScrollingDown = () => {
     return isScrollingDown;
 }
 
+// add classes scroll-down and scroll-up to the list of classes of the nav element 
 const handleNavScroll = () => {
     if (isScrollingDown() && !nav.contains(document.activeElement)){
         nav.classList.add("scroll-down");
@@ -44,7 +45,10 @@ const optimize = (callback, time) => {
 }
 
 
+// if the device wants animations, it calls optimize
 document.addEventListener("scroll", () => {
     if(mediaQuery && !mediaQuery.matches)
     optimize(handleNavScroll, 250)
 });
+
+

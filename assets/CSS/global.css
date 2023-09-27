@@ -53,10 +53,10 @@ nav.scroll-down {
 .opaque-bg-div {
     min-height: 100%;
     min-width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     background-color: rgb(73, 73, 73);
     opacity: 0.45;
 }
@@ -141,10 +141,22 @@ footer{
 }
 
 #contact-info {
-    color: black;
+    color: rgb(255, 255, 255);
     line-height: 40px;
     flex-basis: 20%;
     text-decoration: none;
 }
 
 /* Contact end */
+
+/* media queries and changes to mobile devices */
+@media screen and (max-width: 80rem){
+    .contact-wrapper {
+        flex-basis: 80%;
+    }
+
+    #contact-info {
+        flex-basis: 80%;
+        text-align: center;
+    }
+}

@@ -6,15 +6,19 @@
 
 
 body, html {
-    background-color: darkgrey;
+    background-color: rgb(37, 37, 37);
     height: 100%;
     margin: 0;
     font-family: "Roboto", serif;
-    background-image: url("./assets/images/dimitar-donovski-3chxPwXoiOQ-unsplash.jpg");
+    background-image: url("../images/dimitar-donovski-3chxPwXoiOQ-unsplash.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    /* I have to make the background z index 0 
+    or i have to apply opacity directly onto the image
+    or something like that*/
+
     color: white;
     scroll-behavior: smooth;
 }
