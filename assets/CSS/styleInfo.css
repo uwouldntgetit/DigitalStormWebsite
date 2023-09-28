@@ -40,6 +40,7 @@ a {
     text-align: center;
     font-size: 2.7rem;
     margin-bottom: 10vh;
+    color: blanchedalmond;
 }
 
 
@@ -53,4 +54,7 @@ a {
         font-size: 2rem;
     }
     
+    p {
+        font-size: 1.2rem;
+    }
 }

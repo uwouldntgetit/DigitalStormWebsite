@@ -7,19 +7,19 @@ a {
 }
 
 /****** NavBar setup *****/
-nav {
+nav.navbar {
     text-decoration: none;
     position: sticky;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #eaeaea;
-    padding: 10px;
-    transition: top 500ms ease-in-out;
-    color: black;
+    align-items:center;
 
-    padding-top:10px;
-    padding-bottom: 10px;
+    background-color: #eaeaea;
+    color: rgb(78, 0, 167);
+    transition: top 500ms ease-in-out;
+
     min-height: 10vh;
 }
 
@@ -31,19 +31,30 @@ nav.scroll-down {
     top: -100%;
 }
 
-a.navbar-link {
-    font-size: 1.7rem;
-    font-family: "Roboto", sans-serif;
-    margin: 10px;
-}
-
 div.nav-links-wrapper {
     width: fit-content;
     display: flex;
     row-gap: 25px;
 }
 
+a.navbar-link {
+    font-size: 1.6rem;
+    font-family: "Oswald", "Roboto", sans-serif;
+    margin: 10px;
+    color: black;
+}
+
+
+h1.logo-link {
+    font-size: 2.2rem;
+    font-family: "Oswald", "Roboto", serif;
+    margin-left: 20px;
+}
+
 /***** Navbar End *******/
+
+
+
 
 .wide-container{
     max-width: 100%;
@@ -78,6 +89,12 @@ div.nav-links-wrapper {
     align-content: center;
 }
 
+.ultimate-wrapper {
+    margin-top:0;
+    margin-bottom:0;
+    border: 1px solid transparent;
+}
+
 /* .growing-item-1 {
     flex-grow: 1;
 } */
@@ -88,7 +105,7 @@ footer{
     margin-bottom: 0;
     height: 50px;
     min-height: 8vh;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: black;
     align-items: center;
     justify-content: center;
@@ -97,18 +114,20 @@ footer{
 
 
 /****** Contact Start ******/
+
 .contact-section {
     flex-direction: row;
     align-items: center;
     column-gap: 5%;
     margin-top: 10%;
     margin-bottom: 10%;
+    box-sizing: border-box;
 }
 
 .contact-wrapper {
     min-width: 200px;
     min-height: 50vh;
-    border: 1px solid gray;
+    border: 1px solid rgb(78, 0, 167);
     border-radius: 8px;
     flex-direction: row;
     align-content: center;
@@ -168,5 +187,10 @@ footer{
     #contact-info {
         flex-basis: 80%;
         text-align: center;
+    }
+
+    nav.navbar {
+        min-height: 10vh;
+        height: fit-content;
     }
 }
