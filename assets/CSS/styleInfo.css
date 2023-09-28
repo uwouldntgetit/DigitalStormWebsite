@@ -43,8 +43,14 @@ a {
 }
 
 
-@media screen and(max-width: 60rem) {
+@media screen and (max-width: 60rem) {
     .text-container {
         border: none;
+        margin: 100px 5%;
     }
+
+    #free-consulence {
+        font-size: 2rem;
+    }
+    
 }

@@ -5,6 +5,8 @@ const nav = document.querySelector("nav");
 let isWaiting;
 const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+// nav.classList.add("opaque-bg-div")
+// console.log("ciao");
 
 const isScrollingDown = () => {
     let currentScrollPosition = window.scrollY;
@@ -48,7 +50,6 @@ const optimize = (callback, time) => {
 // if the device wants animations, it calls optimize
 document.addEventListener("scroll", () => {
     if(mediaQuery && !mediaQuery.matches)
-    optimize(handleNavScroll, 250)
+    optimize(handleNavScroll, 100)
 });
-
 
