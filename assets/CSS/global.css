@@ -106,9 +106,10 @@ footer{
     height: 50px;
     min-height: 8vh;
     /* margin-top: 20px; */
-    background-color: black;
+    background-color: white;
     align-items: center;
     justify-content: center;
+    color: black
 }
 
 

@@ -65,7 +65,7 @@ img {
 
 .button-like-link {
     display: inline-block;
-    background-color: gray;
+    background-color: transparent;
     border: 2px solid rgb(78, 0, 167);
     border-radius: 25px;
     min-width: 130px;
@@ -77,6 +77,34 @@ img {
 }
 
 
+.contact-link-div {
+    width: 100%;
+    min-height: fit-content;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+
+    background-color: rgb(81, 80, 80);
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-redirect-title {
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: "Oswald", serif;
+}
+
+#contattaci-btn {
+    color: black;
+    background-color: white;
+}
+
+
 /******** Services start *******/
 .services-container {
     display: flex;
@@ -85,14 +113,21 @@ img {
     justify-content: center;
     flex-basis: content;
     align-items: center;
-    background-color: rgb(136, 136, 136);
     min-height: 80%;
     color:white;
 }
 
+#services-div {
+    background: linear-gradient(to bottom right, black, white);
+}
+
+
 .service {
-    border: 3px solid rgb(78, 0, 167);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 8px;
+
+    background-color: rgb(186, 186, 186);
+    color:black;
 
     margin: 20px 10px;
 
@@ -113,6 +148,8 @@ img {
 #services-description {
     /* make it occupy at least half the available space */
     margin: 10px 30px;
+    font-size: 2rem;
+    text-align: center;
 }
 /******* Services end ******/
 
@@ -120,7 +157,8 @@ img {
 /************* Projects done start **********/
 #projects-div {
     text-align: center;
-    background-color: gray;
+    /* background-color: white; */
+    background: linear-gradient(to top right, black, white);
     padding-top: 40px;
 }
 
