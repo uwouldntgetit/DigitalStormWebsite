@@ -36,23 +36,18 @@
     </header>
 
         
-    <!-- Startinng page -->
+    <!-- Starting page -->
     <div id="home-div" class="home-text-container">
         <h1 id="home-title">Esplora Il mondo Del Digitale<br>Con Digital Storm</h1>
         <div class="divider"></div>
         <p id="home-text-p">Digital Storm e' una agenzia online che si occupa di creare siti web
-            per figure professionali o piccoli business.<br>
+            per figure professionali o piccoli business.<br id="to-delete">
             I nostri prodotti sono curati fino al piu' piccolo dettaglio
             per assicurarci una user experience favolosa.
         </p>
         <a class="button-like-link" href="#services-div">Scopri Di Piu'</a>
     </div>
 
-    <div class="contact-link-div">
-        <p id="contact-redirect-title">Contattaci Per una Consulenza Gratuita</p>
-        <a class="button-like-link" id="contattaci-btn" href="#contact">Contattaci</a>
-
-    </div>
 
 
     <div id="services-div" class="wide-container services-container">
@@ -104,7 +99,13 @@
         </div>
     </div>
 
-    <div id="projects-div" class="full-screen-container">
+    <div class="contact-link-div">
+        <p id="contact-redirect-title">Ti Offriamo Una Consulenza Gratuita</p>
+        <a class="button-like-link" id="contattaci-btn" href="#contact">Contattaci</a>
+    </div>
+
+
+    <div id="projects-div" class="wide-container">
         <h3 id="projects-title">Scopri i nostri lavori piu' recenti</h3>
         <div class="divider"></div>
         <!-- i'll create something like an hero to display some websites -->
@@ -124,15 +125,15 @@
 
 
 
-    <div class="ultimate-wrapper opaque-bg-div">
+    <div class="ultimate-wrapper">
         <!-- put the contact form here -->
         <div id="contact" class="contact-section responsive-flex-container">
-            <div class="contact-wrapper responsive-flex-container">
-                <input id="nome" class="growing-item-1 contact-item" type="text" placeholder="Nome">
-                <input id="email" class="growing-item-1 contact-item" type="email" placeholder="Email">
-                <textarea id="message" class="growing-item-1 contact-item" placeholder="Scrivi un messaggio"></textarea>
+            <form class="contact-wrapper responsive-flex-container">
+                <input id="nome" class="growing-item-1 contact-item" type="text" placeholder="Nome" required>
+                <input id="email" class="growing-item-1 contact-item" type="email" placeholder="Email" required>
+                <textarea id="message" class="growing-item-1 contact-item" placeholder="Scrivi un messaggio" required></textarea>
                 <button id="send-btn" class="contact-item">Invia Il Messaggio</button>
-            </div>
+            </form>
             <div id="contact-info">
                 <p>Tel: +39 391 701 0488<br>
                 Email: business@digitalstorm.site<br>

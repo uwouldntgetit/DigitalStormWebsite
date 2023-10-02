@@ -1,14 +1,14 @@
 
 body {
-    background-color: rgb(92, 92, 92);
+    background-color: #D8D9DA;
     height: 100%;
-    color: white;
-    font-family: "Roboto", serif;
+    color: #272829;
+    font-family: "Oswald", "Roboto", serif;
 }
 
 h3 {
     font-size: 2em;
-    color: blanchedalmond;
+    color: #272829;
 }
 
 p {
@@ -19,6 +19,11 @@ a {
     color: inherit;
 }
 
+footer {
+    background-color: #1a1a1a;
+    color:#D8D9DA;
+}
+
 .text-container {
     margin: 100px 15%;
     padding: 0 20px;
@@ -27,20 +32,22 @@ a {
 }
 
 .main-title {
+    margin-top: 30px;
     text-align: center;
-    color: blanchedalmond;
+    color: black;
 }
 
-#contact-info {
-    color: white;
-}
 
 #free-consulence {
     width: 100%;
     text-align: center;
     font-size: 2.7rem;
     margin-bottom: 10vh;
-    color: blanchedalmond;
+    color: #272829;
+}
+
+#contact-info {
+    color:#272829;
 }
 
 

@@ -1,10 +1,12 @@
-body {
+body , html{
     margin: 0;
+    scroll-behavior: smooth !important;
 }
 
 a {
     text-decoration: none;
 }
+
 
 /****** NavBar setup *****/
 nav.navbar {
@@ -16,8 +18,8 @@ nav.navbar {
     justify-content: space-between;
     align-items:center;
 
-    background-color: #eaeaea;
-    color: rgb(78, 0, 167);
+    background-color: #272829;
+    color: #D8D9DA;
     transition: top 500ms ease-in-out;
 
     min-height: 10vh;
@@ -41,7 +43,6 @@ a.navbar-link {
     font-size: 1.6rem;
     font-family: "Oswald", "Roboto", sans-serif;
     margin: 10px;
-    color: black;
 }
 
 
@@ -54,7 +55,13 @@ h1.logo-link {
 /***** Navbar End *******/
 
 
-
+.divider {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50px;
+    border-top: 3px solid #61677A;
+    border-bottom:3px solid #272829;
+}
 
 .wide-container{
     max-width: 100%;
@@ -79,7 +86,7 @@ h1.logo-link {
 }
 
 .opaque-bg-div {
-    background: rgba(73, 73, 73, 0.45);
+    background: rgba(73, 73, 73, 0.55);
 }
 
 .responsive-flex-container {
@@ -93,25 +100,8 @@ h1.logo-link {
     margin-top:0;
     margin-bottom:0;
     border: 1px solid transparent;
+    background-color: #272829;
 }
-
-/* .growing-item-1 {
-    flex-grow: 1;
-} */
-
-
-footer{
-    display: flex;
-    margin-bottom: 0;
-    height: 50px;
-    min-height: 8vh;
-    /* margin-top: 20px; */
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    color: black
-}
-
 
 
 /****** Contact Start ******/
@@ -123,24 +113,24 @@ footer{
     margin-top: 10%;
     margin-bottom: 10%;
     box-sizing: border-box;
+    font-family: "Oswald", "Roboto", serif;
 }
 
 .contact-wrapper {
     min-width: 200px;
     min-height: 50vh;
-    border: 1px solid rgb(78, 0, 167);
     border-radius: 8px;
     flex-direction: row;
     align-content: center;
     gap: 20px;
     padding: 20px 0px;
     flex-basis: 45%;
-    background-color: rgb(169, 165, 165);
+    background-color: #1a1a1a;
 }
 
 .contact-item {
-    background-color: rgb(59, 59, 59);
-    color: white;
+    background-color: #D8D9DA;
+    color: #1a1a1a;
     border: none;
     border-radius: 8px;
     min-height: 30px;
@@ -178,6 +168,20 @@ footer{
 }
 
 /* Contact end */
+
+
+
+footer{
+    display: flex;
+    margin-bottom: 0;
+    height: 50px;
+    min-height: 8vh;
+    /* margin-top: 20px; */
+    background-color: #D8D9DA;
+    align-items: center;
+    justify-content: center;
+    color: black
+}
 
 /* media queries and changes to mobile devices */
 @media screen and (max-width: 80rem){
