@@ -181,6 +181,7 @@ img {
     margin-top: 40px;
     box-sizing: border-box;
     height: auto;
+    gap: 40px !important;
 }
 
 .project-hero {
@@ -191,8 +192,16 @@ img {
     max-width: 90%;
     border-radius: 10px;
     background-color: #eaeaea;
-    margin: 25px 25px;
-    color:black
+    color:black;
+    
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.project-hero-desc{
+    max-height: 20px;
 }
 
 /* projects done end */

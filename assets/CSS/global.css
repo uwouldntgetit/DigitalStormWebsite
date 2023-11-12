@@ -94,6 +94,7 @@ h1.logo-link {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    gap: 20px;
 }
 
 .ultimate-wrapper {
